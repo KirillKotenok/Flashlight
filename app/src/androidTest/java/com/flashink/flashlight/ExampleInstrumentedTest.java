@@ -1,4 +1,4 @@
-package kk.test.flashlight;
+package com.flashink.flashlight;
 
 import android.content.Context;
 
