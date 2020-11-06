@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
             } else if (start_stop.getText().equals("Off")) {
                 flashClass.flashOff(cameraProperties);
-                start_stop.setText("On  ");
+                start_stop.setText("On");
             }
             camera.setParameters(cameraProperties);
             previewTexture = new SurfaceTexture(0);
