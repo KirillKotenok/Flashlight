@@ -47,4 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        flashClass.flashOff(cameraProperties);
+        super.onBackPressed();
+    }
 }
