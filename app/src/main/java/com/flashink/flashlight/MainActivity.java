@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity {
         flashClass = new FlashClass();
 
         start_stop.setOnClickListener(v -> {
-            if (start_stop.getText().equals("Start")) {
+            if (start_stop.getText().equals("On")) {
                 flashClass.flashOn(cameraProperties);
-                start_stop.setText("Stop");
+                start_stop.setText("Off");
 
-            } else if (start_stop.getText().equals("Stop")) {
+            } else if (start_stop.getText().equals("Off")) {
                 flashClass.flashOff(cameraProperties);
-                start_stop.setText("Start");
+                start_stop.setText("On  ");
             }
             camera.setParameters(cameraProperties);
             previewTexture = new SurfaceTexture(0);
